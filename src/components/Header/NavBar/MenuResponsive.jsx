@@ -20,7 +20,7 @@ const MenuResponsive = () => {
       </button>
       <div
         hidden={oculto}
-        className="absolute right-0 z-[1] min-w-full py-12 xs:px-[40vw] md:flex md:visible md:flex-row font-tilt font-bold text-lg"
+        className="absolute right-0 z-[1] min-w-full py-12 xs:px-[40vw] md:flex md:visible md:flex-row font-tilt font-bold text-lg hover:bg-gray-200"
       >
         <ul className="text-center bg-teal-800">
           <Link to='/'>

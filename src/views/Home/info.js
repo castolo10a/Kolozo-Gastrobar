@@ -15,7 +15,7 @@ export const info = [
     },
      {
         path: '/Bookings',
-        textButton: 'RESERVA AQUI',
+        textButton: 'RESERVA AQUÍ',
         image: 'bg-beerKolozo',
         name: 'Experiencia única con comida exquisita, buena música y cocteles de autor'
     }

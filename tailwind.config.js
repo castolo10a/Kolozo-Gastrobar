@@ -38,7 +38,8 @@ module.exports = {
         'beerKolozo': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/kolozoBeer.jpg')",
         'kolozoSitio': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/kolozoSitio.jpg')",
         'decoracion2': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/decoracion.jpg')",
-        'kolozoom' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/kolozoZoom.jpg')"
+        'kolozoom' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/kolozoZoom.jpg')",
+        'HamburguesaGanadora' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/hamburguesaGanadora.jpg')"
       },
       fontFamily : {
         norse: ['Norsebold', 'static']

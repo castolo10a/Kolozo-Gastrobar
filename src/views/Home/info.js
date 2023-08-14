@@ -11,7 +11,7 @@ export const info = [
         path: '/Menu',
         textButton: 'VER MENÚ',
         image: 'bg-tacos',
-        name: 'Gastronomia Mexicana y Mediterranea'
+        name: 'Gastronomía Mexicana y Mediterránea'
     },
      {
         path: '/Bookings',
@@ -23,7 +23,7 @@ export const info = [
 export const infoEvent = {
     path: '/Events',
     textButton: 'Conoce más →',
-    image: 'bg-cumpleDec',
+    image: 'bg-decoracion2',
     name: 'CELEBRACIONES Y EVENTOS EMPRESARIALES',
     description: 'Si estás en busca del lugar perfecto para dar vida a tu evento soñado, Kolozo es la solución ideal.'
 }

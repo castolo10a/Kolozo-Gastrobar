@@ -80,16 +80,16 @@ const infoSlide = [
         title: 'Kolozo Gastrobar'
     },
     {
+        image: 'bg-bautizo',
+        title: 'Decoracion Bautizo'
+    },
+    {
         image: 'bg-amigos',
         title: 'Celebraciones'
     },
     {
         image: 'bg-cumple',
         title: 'Cumpleaños'
-    },
-    {
-        image: 'bg-bautizo',
-        title: 'Decoracion Bautizo'
     },
     {
         image: 'bg-cumpleDec',

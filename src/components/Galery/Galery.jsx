@@ -1,22 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import CardGalery from "./CardGalery";
 
 const Galery = ({ infoSlide }) => {
   const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
-  const itemsPerRow = window.innerWidth >= 768 ? 4 : 1;
 
-  const nextImage = () => {
+  const nextImage = useCallback(() => {
     setCurrentBackgroundIndex((prevIndex) =>
-      (prevIndex + itemsPerRow) % infoSlide.length
+      (prevIndex + 1) % infoSlide.length
     );
-  };
+  }, [infoSlide.length]);
 
-  const prevImage = () => {
+  const prevImage = useCallback(() => {
     setCurrentBackgroundIndex((prevIndex) =>
-      (prevIndex - itemsPerRow + infoSlide.length) % infoSlide.length
+      (prevIndex - 1 + infoSlide.length) % infoSlide.length
     );
-  };
+  }, [infoSlide.length]);
+
+  useEffect(() => {
+    const interval = setInterval(nextImage, 2000);
+    return () => clearInterval(interval);
+  }, [nextImage]);
+  
 
   return (
     <div className="relative">
@@ -30,7 +35,7 @@ const Galery = ({ infoSlide }) => {
         <div className="flex w-full">
           {infoSlide.map((image, index) => (
             index >= currentBackgroundIndex &&
-            index < currentBackgroundIndex + itemsPerRow && (
+            index < currentBackgroundIndex + 4 && (
               <CardGalery
                 key={index}
                 image={image.image}

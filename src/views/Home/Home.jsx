@@ -58,7 +58,9 @@ export default function Home () {
             <h1 className="text-black lg:text-2xl">GALERIA</h1>
         </div>
         <div className="md:p-4">
-            <Galery infoSlide={infoSlide}/>
+            {infoSlide ? 
+                <Galery infoSlide={infoSlide}/> : 'Loading...'
+            }
         </div>
     </div>
     )

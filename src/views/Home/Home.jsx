@@ -1,10 +1,10 @@
 import Carrousel from "../../components/Carrousel/Carrousel";
 import Card from "../../components/Card/Card";
-import info from "./info"
+import CardHome from "../../components/CardHome/CardHome";
+import {info, title, images, infoEvent} from "./info"
 
 export default function Home () {
-    const images = ['bg-kolozoSitio', 'bg-bebida5', 'bg-alitas'];
-    const title = 'GASTRONOMIA, MIXOLOGIA Y BUENA MÚSICA';
+    const {path, textButton, image, name, description} = infoEvent;
 
     return (
     <div className="bg-teal-800">
@@ -12,7 +12,7 @@ export default function Home () {
             <Carrousel images={images} title={title}/>
         </div>
         <div className="left-0 w-full text-center md:pt-14">
-            <h1 className="text-black lg:text-2xl">Tres Razonez para visitar Kolozo</h1>
+            <h1 className="text-black lg:text-2xl">TRES RAZONES PARA VISITAR KOLOZO</h1>
         </div>
         <div className="flex flex-wrap">
             {info.map((infoCard, key) => {
@@ -24,6 +24,12 @@ export default function Home () {
                 name={infoCard.name}
                 />
             })}
+        </div>
+        <div className="hidden md:block left-0 w-full text-center md:pt-14">
+            <h1 className="text-black lg:text-2xl">CELEBRACIONES Y EVENTOS</h1>
+        </div>
+        <div>
+            <CardHome  path={path} textButton={textButton} image={image} name={name} description={description}/>
         </div>
     </div>
     )

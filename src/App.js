@@ -7,6 +7,7 @@ import Bookings from './views/Bookings/Bookings';
 import Menu from './views/Menu/Menu';
 import Contact from './views/Contact/Contact';
 import Wpp from './components/Wpp/Wpp';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/Contact' element={<Contact />}/>
       </Routes>
       <Wpp />
+      <Footer />
     </div>
   );
 }

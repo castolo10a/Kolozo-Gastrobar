@@ -12,7 +12,7 @@ export default function Home () {
             <Carrousel images={images} title={title}/>
         </div>
         <div className="left-0 w-full text-center md:pt-14">
-            <h1 className="text-black md:text-4xl">3 Razonez para visitar  kolozo...</h1>
+            <h1 className="text-black lg:text-2xl">Tres Razonez para visitar Kolozo</h1>
         </div>
         <div className="flex flex-wrap">
             {info.map((infoCard, key) => {

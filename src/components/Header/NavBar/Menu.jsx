@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
     return (
-      <div className="hidden md:flex md:visible md:flex-row font-tilt font-bold text-xl">
+      <div className="hidden lg:flex lg:visible lg:flex-row font-tilt font-bold text-xl">
         <Link to='/'>
           <button className="px-4 py-2 text-black cursor-pointer hover:underline hover:underline-offset-[1em] hover:underline-amber-400 hover:text-amber-400 transition-colors duration-300">
               Inicio

@@ -15,7 +15,7 @@ export default function Home () {
             <Carrousel images={images} title={title}/>
         </div>
         <div className="left-0 w-full text-center md:pt-14">
-            <h1 className="text-black lg:text-2xl">TRES RAZONES PARA VISITAR KOLOZO</h1>
+            <h1 className="text-gray-200 font-sans font-bold md:text-2xl">TRES RAZONES PARA VISITAR KOLOZO</h1>
         </div>
         <div className="flex flex-wrap">
             {info.map((infoCard, key) => {
@@ -29,19 +29,19 @@ export default function Home () {
             })}
         </div>
         <div className="hidden md:block left-0 w-full text-center md:pt-14">
-            <h1 className="text-black lg:text-2xl">CELEBRACIONES Y EVENTOS</h1>
+            <h1 className="text-gray-200 font-sans font-bold md:text-2xl">CELEBRACIONES Y EVENTOS</h1>
         </div>
         <div>
             <CardHome  path={path} textButton={textButton} image={image} name={name} description={description}/>
         </div>
         <div className="left-0 w-full text-center md:pt-14">
-            <h1 className="text-black lg:text-2xl">VISITANOS</h1>
+            <h1 className="text-gray-200 font-sans font-bold md:text-2xl">VISITANOS</h1>
         </div>
         <div className="flex flex-col items-center justify-center md:flex-column md:items-center md:justify-center">
             <div className="w-full md:w-3/5 p-4 text-center md:text-center">
-                <h1 className="text-black lg:text-2xl">LA DORADA - CALDAS</h1>
-                <h1 className="text-black lg:text-xl">B. CENTRO</h1>
-                <h1 className="text-black lg:text-xl">CALLE 16 # 1-15</h1>
+                <h1 className="text-gray-200 font-sans font-bold md:text-2xl">LA DORADA - CALDAS</h1>
+                <h1 className="text-gray-200 font-sans font-bold md:text-xl">B. CENTRO</h1>
+                <h1 className="text-gray-200 font-sans font-bold md:text-xl">CALLE 16 # 1-15</h1>
             </div>
             <div className="w-full md:w-2/4 h-[50vw] lg:h-screen max-h-screen">
                 <iframe
@@ -55,7 +55,7 @@ export default function Home () {
             </div>
         </div>
         <div className="left-0 w-full text-center md:pt-14">
-            <h1 className="text-black lg:text-2xl">GALERIA</h1>
+            <h1 className="text-gray-200 font-sans font-bold md:text-2xl">GALERIA</h1>
         </div>
         <div className="md:p-4">
             {infoSlide ? 

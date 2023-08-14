@@ -41,7 +41,7 @@ module.exports = {
         'kolozoom' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/kolozoZoom.jpg')"
       },
       fontFamily : {
-        tilt: ['TiltPrism', 'static']
+        norse: ['Norsebold', 'static']
       }
     },
   },

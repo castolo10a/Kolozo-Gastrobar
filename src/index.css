@@ -2,7 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @font-face {
-    font-family: 'TiltPrism';
-    src: url('./assets/fonts/TiltPrism-Regular.woff2') format('woff2')
+    font-family: 'Norsebold';
+    src: url('./assets/fonts/Norsebold.woff') format('woff')
 };
 

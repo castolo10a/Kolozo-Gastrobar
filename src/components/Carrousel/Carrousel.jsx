@@ -24,7 +24,7 @@ const Carrousel = ({ images, title }) => {
         ))}
       </div>
       <div className="absolute bottom-0 left-0 w-full text-center h-1/6 py-12 bg-gradient-to-b from-teal-100 to-teal-800">
-        <h1 className="text-black lg:text-4xl font-tilt font-bold">
+        <h1 className="text-black font-norse text-2xl sm:text-6xl">
           {title}
         </h1>
       </div>

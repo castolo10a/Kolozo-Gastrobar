@@ -24,10 +24,6 @@ const infoSlide = [
         title: 'Crumble'
     },
     {
-        image: 'bg-bebida3',
-        title: 'bebida3'
-    },
-    {
         image: 'bg-decoracion',
         title: 'Decoracion'
     },

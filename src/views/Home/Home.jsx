@@ -40,7 +40,7 @@ export default function Home () {
         <div className="flex flex-col items-center justify-center md:flex-column md:items-center md:justify-center">
             <div className="w-full md:w-3/5 p-4 text-center md:text-center">
                 <h1 className="text-black lg:text-2xl">LA DORADA - CALDAS</h1>
-                <h1 className="text-black lg:text-xl">CENTRO</h1>
+                <h1 className="text-black lg:text-xl">B. CENTRO</h1>
                 <h1 className="text-black lg:text-xl">CALLE 16 # 1-15</h1>
             </div>
             <div className="w-full md:w-2/4 h-[50vw] lg:h-screen max-h-screen">

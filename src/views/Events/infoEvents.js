@@ -1,7 +1,7 @@
 export const infoEvents = {
-        titleButton:'VER MENÚ',
+        titleButton:'RESERVA AQUÍ →',
         pathMenu: 'http://wa.me/573136582723#',
         image: 'bg-hamburguesa',
-        name: 'RESERVA AQUÍ →',
-        description: 'Sumérgete en una experiencia culinaria inigualable en nuestro restaurante, donde los platos cobran vida a través de una fusión única de sabores e influencias. Inspirados por las ricas tradiciones culinarias de culturas como la mexicana y mediterránea, nuestro menú se convierte en una obra maestra de exquisitez y creatividad.'
+        name: 'LO MEJOR PARA TUS EVENTOS EN LA DORADA - CALDAS',
+        description: 'Descubre el encanto de KOLOZO, donde celebraciones únicas cobran vida. Desde eventos empresariales impactantes hasta íntimas celebraciones, somos el anfitrión perfecto. Experiencia culinaria exquisita y atmósfera envolvente se fusionan en un telón de fondo ideal. Supera tus expectativas con atención impecable y detalles cuidadosamente curados. En KOLOZO, cada ocasión se convierte en un relato inolvidable. Celebra con distinción.'
 }

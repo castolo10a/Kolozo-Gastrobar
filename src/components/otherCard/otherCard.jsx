@@ -1,4 +1,4 @@
-import ButtonMenu from "../Buttons/ButtonMenu";
+import ButtonUrl from "../Buttons/ButtonUrl";
 import ButtonPath from "../Buttons/ButtonPath";
 
 export default function otherCard({ path, textButton, titleButton, image, name, description, index, pathMenu }) {
@@ -18,7 +18,7 @@ export default function otherCard({ path, textButton, titleButton, image, name, 
             <ButtonPath path={path} textButton={textButton} />
           </div>
           <div className={`${!pathMenu || !titleButton ? 'hidden md:block' : ''}flex justify-center items-end mt-4`}>
-            <ButtonMenu pathMenu={pathMenu} titleButton={titleButton}/>
+            <ButtonUrl pathMenu={pathMenu} titleButton={titleButton}/>
           </div>
         </div>
       </div>

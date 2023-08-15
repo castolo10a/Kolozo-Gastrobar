@@ -1,10 +1,6 @@
 import React from 'react';
 
-const ButtonMenu = ({ pathMenu, titleButton }) => {
-  // const handleView = () => {
-  //   window.open(pathMenu, '_blank');
-  // };
-
+const ButtonUrl = ({ pathMenu, titleButton }) => {
   return (
     <a 
       href={pathMenu}
@@ -19,4 +15,4 @@ const ButtonMenu = ({ pathMenu, titleButton }) => {
   );
 };
 
-export default ButtonMenu;
+export default ButtonUrl;

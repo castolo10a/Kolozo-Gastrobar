@@ -3,7 +3,7 @@ import OtherCard from "../../components/OtherCard/OtherCard";
 import {infoEvents} from "./infoEvents";
 
 export default function Events () {
-    const images = ['bg-cumple', 'bg-cumpleDec', 'bg-deco'];
+    const images = ['bg-decoracion2', 'bg-cumpleDec', 'bg-deco'];
     const title = 'CELEBRACIONES Y EVENTOS EMPRESARIALES';
     const {pathMenu, image, name, description, titleButton} = infoEvents;
 

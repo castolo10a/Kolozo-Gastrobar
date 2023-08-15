@@ -18,7 +18,7 @@ const Carrousel = ({ images, title }) => {
           <div
             key={index}
             className={`absolute inset-0 w-full h-5/6 bg-cover bg-center transition-opacity duration-500 ${
-              index === currentBackgroundIndex ? 'opacity-100 hover:opacity-75 hover:cursor-pointer z-10 ' : 'opacity-0 z-0 pointer-events-none '
+              index === currentBackgroundIndex ? 'opacity-75 z-10 ' : 'opacity-0 z-0 pointer-events-none '
             } ${image}`}
           />
         ))}

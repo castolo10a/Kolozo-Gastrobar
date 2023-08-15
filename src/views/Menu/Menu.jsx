@@ -24,6 +24,7 @@ export default function Menu () {
                 name={info.name}
                 description={info.description}
                 index={index + 1}
+                titleButton={info.titleButton}
               />
             );
           }) :

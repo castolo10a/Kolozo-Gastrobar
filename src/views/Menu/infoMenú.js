@@ -7,6 +7,7 @@ export const infoMenu = [
         description: 'Ofrecemos almuerzos ejecutivos, manteniendo nuestra distintiva combinación de sabores auténticos.'
     },
     {
+        titleButton:'VER MENÚ',
         pathMenu: fileUrl,
         image: 'bg-hamburguesa',
         name: 'NUESTRO MENÚ',

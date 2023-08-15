@@ -1,11 +1,11 @@
 import Carrousel from "../../components/Carrousel/Carrousel";
 import OtherCard from "../../components/OtherCard/OtherCard";
-import { infoBookings } from "./infoBooking";
+import { infoBookings } from "./infoBookings";
 
 export default function Reserves () {
     const images = ['bg-bebida2', 'bg-lomo', 'bg-hamburguesa'];
     const title = 'RESERVAS';
-    const {textButton, path, image, name, description} = infoBookings
+    const {image, name, description, pathMenu, titleButton} = infoBookings
 
     return (
     <div className="bg-teal-800">
@@ -18,6 +18,8 @@ export default function Reserves () {
                 image={image}
                 name={name}
                 description={description}
+                pathMenu={pathMenu}
+                titleButton={titleButton}
             />
         </div>
     </div>

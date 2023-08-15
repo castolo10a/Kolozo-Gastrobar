@@ -1,7 +1,7 @@
 import ButtonMenu from "../Buttons/ButtonMenu";
 import ButtonPath from "../Buttons/ButtonPath";
 
-export default function otherCard({ path, textButton, image, name, description, index, pathMenu }) {
+export default function otherCard({ path, textButton, titleButton, image, name, description, index, pathMenu }) {
   return (
     <div className="md:flex-row flex-col w-90 md:w-5/6 mx-auto p-4">
       <div className={`flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : ''} `}>
@@ -17,8 +17,8 @@ export default function otherCard({ path, textButton, image, name, description, 
           <div className={`${!path || !textButton ? 'hidden md:block' : ''}flex justify-center items-end mt-4`}>
             <ButtonPath path={path} textButton={textButton} />
           </div>
-          <div className={`${!pathMenu ? 'hidden md:block' : ''}flex justify-center items-end mt-4`}>
-            <ButtonMenu pathMenu={pathMenu} />
+          <div className={`${!pathMenu || !titleButton ? 'hidden md:block' : ''}flex justify-center items-end mt-4`}>
+            <ButtonMenu pathMenu={pathMenu} titleButton={titleButton}/>
           </div>
         </div>
       </div>

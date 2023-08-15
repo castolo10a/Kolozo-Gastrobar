@@ -4,6 +4,8 @@ import CardGalery from "./CardGalery";
 
 const Galery = ({ infoSlide }) => {
   const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
+  const isMobile = window.innerWidth <= 768;
+  const itemsPerSlide = isMobile ? 1 : 4;
 
   const nextImage = useCallback(() => {
     setCurrentBackgroundIndex((prevIndex) =>
@@ -24,7 +26,7 @@ const Galery = ({ infoSlide }) => {
   
 
   return (
-    <div className="relative">
+    <div className="relative bg-teal-800">
       <div className="flex justify-center items-center">
         <button
           className="text-3xl text-white bg-black p-2 rounded-full opacity-50 hover:opacity-75 focus:outline-none"
@@ -35,7 +37,7 @@ const Galery = ({ infoSlide }) => {
         <div className="flex w-full">
           {infoSlide.map((image, index) => (
             index >= currentBackgroundIndex &&
-            index < currentBackgroundIndex + 4 && (
+            index < currentBackgroundIndex + itemsPerSlide && (
               <CardGalery
                 key={index}
                 image={image.image}

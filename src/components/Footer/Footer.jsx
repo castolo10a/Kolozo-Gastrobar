@@ -41,9 +41,9 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <div className="bg-teal-800 text-center py-6">
+    <div className="bg-teal-800 text-center">
       <div className="border-t-2 border-gray-300 mb-4" />
-      <p className="text-gray-200 mb-4 font-norse font-bold text-xl md:text-2xl">Síguenos en Redes</p>
+      <p className="text-gray-200 mb-4 font-norse font-bold text-xl md:text-4xl">Síguenos en Redes</p>
       <div className="flex justify-center space-x-4 mb-4">
         <a
           href="https://www.facebook.com/kolozo.gastrobar"
@@ -63,7 +63,7 @@ export default function Footer() {
         </a>
       </div>
       <p className="text-gray-200 mb-4">Kolozo Gastrobar © {new Date().getFullYear()} Todos los derechos reservados</p>
-      <p className="text-gray-200 mb-1">
+      <p className="text-gray-200 mb-0">
         <a 
           href="https://fullstack-colombia.com/"
           target="_blank"

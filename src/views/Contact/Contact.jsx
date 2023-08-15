@@ -74,66 +74,65 @@ export default function Contact () {
     return (
     <div className="bg-teal-800">
         <Carrousel images={images} title={title}/>
-        <div className="flex place-items-center items-center w-4/5 mx-auto px-24">
-        <form
-            className="flex flex-col mx-auto text-center"
-            ref={form}
-            onSubmit={(event) => handleSubmit(event)}
-          >
-            <div className="py-8">
-              <p className="pt-2 md:pt-0 md:py-0 font-sans text-gray-200 md:text-2xl">
+        <div className="w-full mx-auto px-4 md:px-24">
+        <div className="py-8">
+              <p className="pt-2 md:pt-0 md:py-0 font-sans text-gray-200 md:text-2xl text-center">
                 Nuestro equipo está aquí para brindarte asistencia en cualquier consulta o solicitud que puedas tener. Si deseas ponerte en contacto con nosotros, por favor utiliza el formulario que encontrarás a continuación. También puedes conectarte con nosotros a través de nuestras redes sociales. ¡Esperamos ansiosamente tus preguntas y comentarios!
 
                 Estamos comprometidos en responder a la brevedad posible y en brindarte la atención que mereces. Tu opinión es esencial para nosotros y esperamos poder ayudarte en todo lo que necesites. ¡No dudes en contactarnos!
               </p>
             </div>
-            <div className="flex flex-col">
-              <div className="flex flex-wrap md:flex-row justify-evenly py-8">
-                <div className="flex flex-col w-full md:w-auto">
-                  <input
-                    placeholder="Nombre*"
-                    type="text"
-                    name="user_name"
-                    value={input.user_name}
-                    id="name"
-                    className="h-12 md:w-80 px-3 font-sans bg-transparent border border-solid outline-none rounded-lg text-gray-200 text-2xl"
-                    autoComplete="off"
-                    onChange={handleChange}
-                  />
+        <form
+            className="flex flex-col mx-auto text-center"
+            ref={form}
+            onSubmit={(event) => handleSubmit(event)}
+          >
+            <div className="flex flex-col md:flex-row md:justify-around md:py-4">
+                <div className="flex flex-col w-full md:w-auto md:mb-0 mb-4">
+                    <input
+                        placeholder="Nombre*"
+                        type="text"
+                        name="user_name"
+                        value={input.user_name}
+                        id="name"
+                        className="h-12 md:w-80 px-3 font-sans bg-transparent border border-solid rounded-lg text-gray-200 md:text-2xl"
+                        autoComplete="off"
+                        onChange={handleChange}
+                    />
                     <span
-                      hidden={!err.user_name}
-                      className="before:content-['*'] before:mr-.75 before:text-red-800 text-red-800 italic text-lg"
+                        hidden={!err.user_name}
+                        className="before:content-['*'] before:mr-.75 before:text-red-800 text-red-800 italic text-lg"
                     >
-                      {err.user_name}
+                        {err.user_name}
                     </span>
                 </div>
                 <div className="flex flex-col w-full md:w-auto">
-                  <input
-                    placeholder="Email*"
-                    type="text"
-                    name="user_email"
-                    value={input.user_email}
-                    id="email"
-                    className="h-12 md:w-80 px-3 font-sans bg-transparent border border-solid outline-none rounded-lg text-gray-200 text-2xl"
-                    autoComplete="off"
-                    onChange={handleChange}
-                  />
+                    <input
+                        placeholder="Email*"
+                        type="text"
+                        name="user_email"
+                        value={input.user_email}
+                        id="email"
+                        className="h-12 md:w-80 px-3 font-sans bg-transparent border border-solid outline-none rounded-lg text-gray-200 md:text-2xl"
+                        autoComplete="off"
+                        onChange={handleChange}
+                    />
                     <span
-                      hidden={!err.user_email}
-                      className="before:content-['*'] before:mr-.75 before:text-red-800 text-red-800 italic text-lg"
+                        hidden={!err.user_email}
+                        className="before:content-['*'] before:mr-.75 before:text-red-800 text-red-800 italic text-lg"
                     >
-                      {err.user_email}
+                        {err.user_email}
                     </span>
                 </div>
-              </div>
-              <div className="flex flex-col w-auto md:w-auto py-8">
+            </div>
+            <div className="flex flex-col w-auto md:w-auto py-8">
                 <textarea
-                placeholder="Mensaje*"
+                  placeholder="Mensaje*"
                   name="message"
                   value={input.message}
                   cols="30"
                   rows="8"
-                  className="bg-transparent px-3 py-2 font-sans bg-transparent border border-solid outline-none rounded-lg text-gray-200 text-2xl"
+                  className="bg-transparent px-3 py-2 font-sans bg-transparent border border-solid outline-none rounded-lg text-gray-200 md:text-2xl"
                   autoComplete="off"
                   onChange={handleChange}
                 ></textarea>
@@ -144,19 +143,18 @@ export default function Contact () {
                     {err.message}
                   </span>
               </div>
-            </div>
             <div className="py-8">
                 <ButtonSubmit
                   status={Object.values(err).length !== 0}
                 />
-              </div>
+            </div>
           </form>
         </div>
-        <div className="w-full text-center md:pt-6">
-            <h1 className="text-gray-200 font-sans font-bold md:text-4xl pb-8">
+        <div className="w-full text-center pb-12">
+            <h1 className="text-gray-200 font-sans font-bold md:text-4xl md:pb-4">
                 🕛Horario de Atención🕛
             </h1>
-            <p className="text-gray-200 font-sans md:text-2xl w-4/5 mx-auto text-center md:text-center ">
+            <p className="text-gray-200 font-sans md:text-2xl">
                 Te damos la bienvenida de martes a domingo para disfrutar de almuerzos y cenas, brindándote una experiencia inigualable desde el mediodía hasta la noche. Descansamos los lunes para prepararnos y ofrecerte lo mejor en los días siguientes.
             </p>
         </div>

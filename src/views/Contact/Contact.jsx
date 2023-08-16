@@ -150,14 +150,6 @@ export default function Contact () {
             </div>
           </form>
         </div>
-        <div className="w-full text-center pb-12">
-            <h1 className="text-gray-200 font-sans font-bold md:text-4xl md:pb-4">
-                🕛Horario de Atención🕛
-            </h1>
-            <p className="text-gray-200 font-sans md:text-2xl">
-                Te damos la bienvenida de martes a domingo para disfrutar de almuerzos y cenas, brindándote una experiencia inigualable desde el mediodía hasta la noche. Descansamos los lunes para prepararnos y ofrecerte lo mejor en los días siguientes.
-            </p>
-        </div>
     </div>
     )
 }

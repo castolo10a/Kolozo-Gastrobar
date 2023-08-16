@@ -26,7 +26,7 @@ const Galery = ({ infoSlide }) => {
   
 
   return (
-    <div className="relative bg-fondo bg-cover">
+    <div className="relative">
       <div className="flex justify-center items-center">
         <button
           className="text-3xl text-white bg-black p-2 rounded-full opacity-50 hover:opacity-75 focus:outline-none"

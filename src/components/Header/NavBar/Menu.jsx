@@ -12,8 +12,8 @@ const Menu = () => {
       <Link to="/">
         <button
           className={`px-4 py-2 ${
-            isActive("/") ? 'text-black underline underline-offset-[1em] underline-black' : 'text-gray-200'
-          } cursor-pointer hover:underline hover:underline-offset-[1em] hover:underline-black hover:text-black transition-colors duration-300`}
+            isActive("/") ? 'text-black underline underline-offset-[1em] underline-black' : 'text-black'
+          } cursor-pointer hover:underline hover:underline-offset-[1em] hover:underline-black transition-colors duration-300`}
         >
           Inicio
         </button>
@@ -21,8 +21,8 @@ const Menu = () => {
       <Link to="/Menu">
         <button
           className={`px-4 py-2 ${
-            isActive("/Menu") ? 'text-black underline underline-offset-[1em] underline-black' : 'text-gray-200'
-          } cursor-pointer hover:underline hover:underline-offset-[1em] hover:underline-black hover:text-black transition-colors duration-300`}
+            isActive("/Menu") ? 'text-black underline underline-offset-[1em] underline-black' : 'text-black'
+          } cursor-pointer hover:underline hover:underline-offset-[1em] hover:underline-black transition-colors duration-300`}
         >
           Menú
         </button>
@@ -30,8 +30,8 @@ const Menu = () => {
       <Link to="/Bookings">
         <button
           className={`px-4 py-2 ${
-            isActive("/Bookings") ? 'text-black underline underline-offset-[1em] underline-black' : 'text-gray-200'
-          } cursor-pointer hover:underline hover:underline-offset-[1em] hover:underline-black hover:text-black transition-colors duration-300`}
+            isActive("/Bookings") ? 'text-black underline underline-offset-[1em] underline-black' : 'text-black'
+          } cursor-pointer hover:underline hover:underline-offset-[1em] hover:underline-black transition-colors duration-300`}
         >
           Reservas
         </button>
@@ -39,8 +39,8 @@ const Menu = () => {
       <Link to="/Us">
         <button
           className={`px-4 py-2 ${
-            isActive("/Us") ? 'text-black underline underline-offset-[1em] underline-black' : 'text-gray-200'
-          } cursor-pointer hover:underline hover:underline-offset-[1em] hover:underline-black hover:text-black transition-colors duration-300`}
+            isActive("/Us") ? 'text-black underline underline-offset-[1em] underline-black' : 'text-black'
+          } cursor-pointer hover:underline hover:underline-offset-[1em] hover:underline-black transition-colors duration-300`}
         >
           Nosotros
         </button>
@@ -48,8 +48,8 @@ const Menu = () => {
       <Link to="/Events">
         <button
           className={`px-4 py-2 ${
-            isActive("/Events") ? 'text-black underline underline-offset-[1em] underline-black' : 'text-gray-200'
-          } cursor-pointer hover:underline hover:underline-offset-[1em] hover:underline-black hover:text-black transition-colors duration-300`}
+            isActive("/Events") ? 'text-black underline underline-offset-[1em] underline-black' : 'text-black'
+          } cursor-pointer hover:underline hover:underline-offset-[1em] hover:underline-black transition-colors duration-300`}
         >
           Eventos
         </button>
@@ -57,8 +57,8 @@ const Menu = () => {
       <Link to="/Contact">
         <button
           className={`px-4 py-2 ${
-            isActive("/Contact") ? 'text-black underline underline-offset-[1em] underline-black' : 'text-gray-200'
-          } cursor-pointer hover:underline hover:underline-offset-[1em] hover:underline-black hover:text-black transition-colors duration-300`}
+            isActive("/Contact") ? 'text-black underline underline-offset-[1em] underline-black' : 'text-black'
+          } cursor-pointer hover:underline hover:underline-offset-[1em] hover:underline-black transition-colors duration-300`}
         >
           Contacto
         </button>

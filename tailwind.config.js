@@ -39,7 +39,8 @@ module.exports = {
         'kolozoSitio': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/kolozoSitio.jpg')",
         'decoracion2': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/decoracion.jpg')",
         'kolozoom' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/kolozoZoom.jpg')",
-        'HamburguesaGanadora' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/hamburguesaGanadora.jpg')"
+        'HamburguesaGanadora' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/hamburguesaGanadora.jpg')",
+        'fondo' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/fondo.jpeg')"
       },
       fontFamily : {
         norse: ['Norsebold', 'static']

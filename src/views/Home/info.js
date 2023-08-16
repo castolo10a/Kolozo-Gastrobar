@@ -1,9 +1,3 @@
-import kolozositio from '../../assets/images/kolozoSitio.jpg';
-import bebida5 from '../../assets/images/bebida5.png';
-import alitas from '../../assets/images/alitas.png';
-
-export const images = [kolozositio, bebida5, alitas];
-export const title = 'GASTRONOMIA, MIXOLOGIA Y BUENA MÚSICA';
 export const info = [
     {
         path: '/Us',

@@ -1,17 +1,15 @@
-import Carrousel from "../../components/Carrousel/Carrousel";
 import OtherCard from "../../components/OtherCard/OtherCard";
 import { infoMenu } from "./infoMenú";
-import tacos from '../../assets/images/tacosCamaron.png';
-import ceviche from '../../assets/images/cevicheChicharron.png';
-import elotes from '../../assets/images/elotesCarnudos.png';
 
 export default function Menu () {
-    const images = [tacos, ceviche, elotes];
-    const title = 'MENÚ'
 
     return (
     <div className="bg-fondo bg-cover md:pb-8">
-        <Carrousel images={images} title={title}/>
+        <div className="text-center pt-24">
+          <h1 className="text-black font-norse text-6xl">
+            MENÚ
+          </h1>
+        </div>
         <div className="left-0 w-full text-center py-2">
             <h1 className="text-black font-sans font-bold md:text-2xl">Disfruta de una experiencia de sabores única</h1>
         </div>

@@ -1,9 +1,5 @@
 import { useRef, useState } from "react";
-import Carrousel from "../../components/Carrousel/Carrousel";
 import ButtonSubmit from "../../components/Buttons/ButtonSubmit";
-import kolozositio from '../../assets/images/kolozoSitio.jpg';
-import bebida5 from '../../assets/images/bebida5.png';
-import alitas from '../../assets/images/alitas.png';
 
 const initialState = {
     user_name: '',
@@ -12,8 +8,6 @@ const initialState = {
   }
 
 export default function Contact () {
-    const images = [kolozositio, bebida5, alitas];
-    const title = 'CONTACTO'
     const form = useRef()
     const [input, setInput] = useState(initialState)
     const [err, setErr] = useState(initialState)
@@ -76,7 +70,11 @@ export default function Contact () {
 
     return (
     <div className=" bg-fondo bg-cover">
-        <Carrousel images={images} title={title}/>
+        <div className="text-center pt-24">
+          <h1 className="text-black font-norse text-6xl">
+            CONTACTO
+          </h1>
+        </div>
         <div className="w-full mx-auto px-4 md:px-24">
         <div className="py-8">
               <p className="pt-2 md:pt-0 md:py-0 font-sans text-black md:text-2xl text-center">

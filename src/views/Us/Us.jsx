@@ -1,17 +1,15 @@
-import Carrousel from "../../components/Carrousel/Carrousel";
 import OtherCard from "../../components/OtherCard/OtherCard";
-import kolozoGastrobar from '../../assets/images/kolozo-gastrobar.jpg';
-import beerKolozo from '../../assets/images/kolozoBeer.jpg';
-import espacio from '../../assets/images/espacio.jpg';
 import { infoUs } from "./infoUs";
 
 export default function Us () {
-    const images = [kolozoGastrobar, beerKolozo, espacio];
-    const title = 'NOSOTROS'
 
     return (
     <div className="bg-fondo bg-cover md:pb-8">
-        <Carrousel images={images} title={title}/>
+        <div className="text-center pt-24">
+          <h1 className="text-black font-norse text-6xl">
+            NOSOTROS
+          </h1>
+        </div>
         <div>
         {infoUs ? 
           infoUs.map((info, index) => {

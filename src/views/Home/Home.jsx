@@ -1,8 +1,7 @@
-import Carrousel from "../../components/Carrousel/Carrousel";
 import Card from "../../components/Card/Card";
 import CardHome from "../../components/CardHome/CardHome";
 import Galery from "../../components/Galery/Galery";
-import {info, title, images, infoEvent} from "./info";
+import {info, infoEvent} from "./info";
 import infoSlide from './infoSlide';
 
 
@@ -11,9 +10,10 @@ export default function Home () {
 
     return (
     <div className="bg-fondo bg-contain">
-        <div>
-            <Carrousel images={images} title={title}/>
-            {console.log(images)}
+        <div className="text-center pt-24">
+          <h1 className="text-black font-norse text-6xl">
+            GASTRONOMIA, MIXOLOGIA Y BUENA MÚSICA
+          </h1>
         </div>
         <div className="left-0 w-full text-center md:pt-14">
             <h1 className="text-black font-sans font-bold md:text-2xl">TRES RAZONES PARA VISITAR KOLOZO</h1>

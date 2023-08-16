@@ -4,7 +4,7 @@ import logo from '../../assets/images/logo1.jpg';
 
 export default function Footer() {
   return (
-    <div className="bg-fondo bg-contain text-center">
+    <div className="text-center">
       <div className="flex justify-center items-center space-x-4 mb-4">
         <div className="border-t-2 border-black flex-grow"></div>
         <div className="w-14">

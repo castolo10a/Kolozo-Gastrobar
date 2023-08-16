@@ -11,7 +11,7 @@ export default function Events () {
             CELEBRACIONES Y EVENTOS EMPRESARIALES
           </h1>
         </div>
-        <div className="left-0 w-full text-center py-2">
+        <div className="left-0 w-full text-center pt-8">
             <h1 className="text-black font-sans font-bold md:text-2xl">Si buscas el espacio perfecto para tu evento soñado, KOLOZO es ideal para ti</h1>
         </div>
         <div>

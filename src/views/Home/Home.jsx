@@ -56,17 +56,23 @@ export default function Home () {
             </div>
         </div>
         <div className="w-full text-center md:py-14">
-            <h1 className="text-black font-sans font-bold md:text-2xl md:pb-4">
-                Horario de Atención
+            <h1 className="text-black font-sans font-bold md:text-2xl pb-4">
+                Horarios de Atención
             </h1>
-            <p className="text-black font-sans md:text-xl">
-                Te damos la bienvenida de martes a domingo para disfrutar de almuerzos y cenas, brindándote una experiencia inigualable desde el mediodía hasta la noche. Descansamos los lunes para prepararnos y ofrecerte lo mejor en los días siguientes.
-            </p>
+            <ul className="text-black font-sans md:text-xl py-4">
+                <li>•Martes, Miercoles y Jueves: 11 am - 4 pm (Almuerzos) | 4 pm - 1 am (Cenas)</li>
+                <li>•Viernes - Sábado: 11 am - 4 pm (Almuerzos) | 4 pm - 2 am (Cenas y Noche)</li>
+                <li>•Domingo: 11 am - 4 pm (Almuerzos) | 4 pm - 1 am (Cenas)</li>
+                <li>•Lunes: Día de Descanso</li>
+            </ul>
+            <h1 className="text-black font-sans font-bold md:text-xl pb-4">
+            ¡Estamos ansiosos por atenderte en estos horarios y brindarte una experiencia culinaria excepcional!
+            </h1>
         </div>
-        <div className="left-0 w-full text-center md:pt-14">
+        <div className="left-0 w-full text-center py-4">
             <h1 className="text-black font-sans font-bold md:text-2xl">GALERIA</h1>
         </div>
-        <div className="md:p-4">
+        <div className="md:pb-4">
             {infoSlide ? 
                 <Galery infoSlide={infoSlide}/> : 'Loading...'
             }

@@ -10,7 +10,7 @@ export default function Us () {
     const title = 'NOSOTROS'
 
     return (
-    <div className="bg-fondo bg-cover">
+    <div className="bg-fondo bg-cover md:pb-8">
         <Carrousel images={images} title={title}/>
         <div>
         {infoUs ? 

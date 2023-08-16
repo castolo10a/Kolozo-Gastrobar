@@ -2,7 +2,7 @@ const fileUrl = process.env.PUBLIC_URL + '/Menú KOLOZO.pdf';
 
 export const infoMenu = [
     {
-        image: 'bg-osobuco',
+        image: 'bg-almuerzo',
         name: 'ALMUERZOS EJECUTIVOS',
         description: 'Ofrecemos almuerzos ejecutivos, manteniendo nuestra distintiva combinación de sabores auténticos.'
     },

@@ -16,7 +16,6 @@ module.exports = {
         'bebida5': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/bebida5.png')",
         'ceviche': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/cevicheChicharron.png')",
         'crumble': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/crumble.png')",
-        'decoracion': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/decoracion.png')",
         'lomo': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/lomo.jpeg')",
         'elotes': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/elotesCarnudos.png')",
         'nachos': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/nachos.png')",
@@ -38,9 +37,17 @@ module.exports = {
         'beerKolozo': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/kolozoBeer.jpg')",
         'kolozoSitio': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/kolozoSitio.jpg')",
         'decoracion2': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/decoracion.jpg')",
+        'decoracion': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/decoracion.png')",
         'kolozoom' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/kolozoZoom.jpg')",
         'HamburguesaGanadora' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/hamburguesaGanadora.jpg')",
-        'fondo' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/fondo.jpg')"
+        'fondo' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/fondo.jpg')",
+        'aniversario' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/aniversario.jpg')",
+        'amigos2' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/amigos2.jpg')",
+        'celebracion' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/celebracion.jpg')",
+        'almuerzo' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/almuerzo.jpg')",
+        'marimondas' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/marimondas.jpg')",
+        'marimondas2' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/marimondas2.jpg')",
+        'mujeres' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/mujeres.jpg')",
       },
       fontFamily : {
         norse: ['Norsebold', 'static']

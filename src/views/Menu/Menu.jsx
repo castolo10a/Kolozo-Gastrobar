@@ -10,10 +10,10 @@ export default function Menu () {
     const title = 'MENÚ'
 
     return (
-    <div className="bg-fondo bg-cover">
+    <div className="bg-fondo bg-cover md:pb-8">
         <Carrousel images={images} title={title}/>
         <div className="left-0 w-full text-center py-2">
-            <h1 className="text-gray-200 font-sans font-bold md:text-2xl">Disfruta de una experiencia de sabores única</h1>
+            <h1 className="text-black font-sans font-bold md:text-2xl">Disfruta de una experiencia de sabores única</h1>
         </div>
         <div>
         {infoMenu ? 

@@ -11,7 +11,7 @@ export default function CardHome({ path, textButton, image, name, description })
             <h1 className="text-lg md:text-xl text-black font-sans font-bold mb-2 md:mb-4 md:text-left">
               {name}
             </h1>
-            <p className="text-black md:text-left">{description}</p>
+            <p className="text-black md:text-left md:text-xl">{description}</p>
           </div>
           <div className="flex justify-center items-end mt-4">
             <ButtonPath path={path} textButton={textButton} />

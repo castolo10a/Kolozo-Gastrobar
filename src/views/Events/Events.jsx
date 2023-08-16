@@ -14,7 +14,7 @@ export default function Events () {
     <div className="bg-fondo bg-cover">
         <Carrousel images={images} title={title}/>
         <div className="left-0 w-full text-center py-2">
-            <h1 className="text-gray-200 font-sans font-bold md:text-2xl">Si buscas el espacio perfecto para tu evento soñado, KOLOZO es ideal para ti</h1>
+            <h1 className="text-black font-sans font-bold md:text-2xl">Si buscas el espacio perfecto para tu evento soñado, KOLOZO es ideal para ti</h1>
         </div>
         <div>
         <OtherCard
@@ -26,7 +26,7 @@ export default function Events () {
         />
         </div>
         <div className="left-0 w-full text-center py-2">
-            <h1 className="text-gray-200 font-sans font-bold md:text-2xl">Transforma tu evento o celebración en una experiencia inolvidable</h1>
+            <h1 className="text-black font-sans font-bold md:text-2xl">Transforma tu evento o celebración en una experiencia inolvidable</h1>
         </div>
     </div>
     )

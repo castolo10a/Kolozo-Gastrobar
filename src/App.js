@@ -12,7 +12,7 @@ import Footer from './components/Footer/Footer';
 function App() {
 
   return (
-    <div className="bg-secondary bg-gradient">
+    <div className="bg-fondo bg-cover">
       <Header />
       <Routes>
         <Route path='/' element={<Home />}/>

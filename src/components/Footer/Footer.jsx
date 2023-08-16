@@ -1,10 +1,17 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTripadvisor } from 'react-icons/fa';
+import logo from '../../assets/images/logo1.jpg';
 
 export default function Footer() {
   return (
     <div className="bg-fondo bg-contain text-center">
-      <div className="border-t-2 border-black mb-4" />
+      <div className="flex justify-center items-center space-x-4 mb-4">
+        <div className="border-t-2 border-black flex-grow"></div>
+        <div className="w-14">
+          <img src={logo} alt="Logo" className="max-w-full h-auto" />
+        </div>
+        <div className="border-t-2 border-black flex-grow"></div>
+      </div>
       <p className="text-black mb-4 font-norse font-bold text-xl md:text-4xl">Síguenos en Redes</p>
       <div className="flex justify-center space-x-4 mb-4">
         <a

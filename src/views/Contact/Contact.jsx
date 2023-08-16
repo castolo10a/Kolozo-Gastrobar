@@ -72,11 +72,11 @@ export default function Contact () {
     }
 
     return (
-    <div className="bg-teal-800">
+    <div className="bg-fondo bg-cover">
         <Carrousel images={images} title={title}/>
         <div className="w-full mx-auto px-4 md:px-24">
         <div className="py-8">
-              <p className="pt-2 md:pt-0 md:py-0 font-sans text-gray-200 md:text-2xl text-center">
+              <p className="pt-2 md:pt-0 md:py-0 font-sans text-black md:text-2xl text-center">
                 Nuestro equipo está aquí para brindarte asistencia en cualquier consulta o solicitud que puedas tener. Si deseas ponerte en contacto con nosotros, por favor utiliza el formulario que encontrarás a continuación. También puedes conectarte con nosotros a través de nuestras redes sociales. ¡Esperamos ansiosamente tus preguntas y comentarios!
 
                 Estamos comprometidos en responder a la brevedad posible y en brindarte la atención que mereces. Tu opinión es esencial para nosotros y esperamos poder ayudarte en todo lo que necesites. ¡No dudes en contactarnos!
@@ -95,13 +95,13 @@ export default function Contact () {
                         name="user_name"
                         value={input.user_name}
                         id="name"
-                        className="h-12 md:w-80 px-3 font-sans bg-transparent border border-solid rounded-lg text-gray-200 md:text-2xl"
+                        className="h-12 md:w-80 px-3 font-sans bg-transparent border border-solid border-black rounded-lg text-black md:text-2xl"
                         autoComplete="off"
                         onChange={handleChange}
                     />
                     <span
                         hidden={!err.user_name}
-                        className="before:content-['*'] before:mr-.75 before:text-red-800 text-red-800 italic text-lg"
+                        className="before:content-['*'] before:mr-.75 before:text-red-700 text-red-700 italic text-lg"
                     >
                         {err.user_name}
                     </span>
@@ -113,13 +113,13 @@ export default function Contact () {
                         name="user_email"
                         value={input.user_email}
                         id="email"
-                        className="h-12 md:w-80 px-3 font-sans bg-transparent border border-solid outline-none rounded-lg text-gray-200 md:text-2xl"
+                        className="h-12 md:w-80 px-3 font-sans bg-transparent border border-solid border-black outline-none rounded-lg text-black md:text-2xl"
                         autoComplete="off"
                         onChange={handleChange}
                     />
                     <span
                         hidden={!err.user_email}
-                        className="before:content-['*'] before:mr-.75 before:text-red-800 text-red-800 italic text-lg"
+                        className="before:content-['*'] before:mr-.75 before:text-red-700 text-red-700 italic text-lg"
                     >
                         {err.user_email}
                     </span>
@@ -132,13 +132,13 @@ export default function Contact () {
                   value={input.message}
                   cols="30"
                   rows="8"
-                  className="bg-transparent px-3 py-2 font-sans bg-transparent border border-solid outline-none rounded-lg text-gray-200 md:text-2xl"
+                  className="bg-transparent px-3 py-2 font-sans bg-transparent border border-solid border-black outline-none rounded-lg text-black md:text-2xl"
                   autoComplete="off"
                   onChange={handleChange}
                 ></textarea>
                   <span
                     hidden={!err.message}
-                    className="before:content-['*'] before:mr-.75 before:text-red-800 text-red-800 italic text-lg"
+                    className="before:content-['*'] before:mr-.75 before:text-red-700 text-red-700 italic text-lg"
                   >
                     {err.message}
                   </span>

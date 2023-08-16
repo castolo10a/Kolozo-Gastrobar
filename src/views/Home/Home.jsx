@@ -13,6 +13,7 @@ export default function Home () {
     <div className="bg-fondo bg-contain">
         <div>
             <Carrousel images={images} title={title}/>
+            {console.log(images)}
         </div>
         <div className="left-0 w-full text-center md:pt-14">
             <h1 className="text-black font-sans font-bold md:text-2xl">TRES RAZONES PARA VISITAR KOLOZO</h1>

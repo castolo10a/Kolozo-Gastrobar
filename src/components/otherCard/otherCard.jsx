@@ -9,10 +9,10 @@ export default function otherCard({ path, textButton, titleButton, image, name, 
         </div>
         <div className="relative bg-transparent md:w-2/5 md:p-6 md:pl-8 flex flex-col justify-between">
           <div>
-            <h1 className="text-lg md:text-xl text-gray-200 font-sans font-bold mb-2 md:mb-4 md:text-left">
+            <h1 className="text-lg md:text-xl text-black font-sans font-bold mb-2 md:mb-4 md:text-left">
               {name}
             </h1>
-            <p className="text-lg md:text-xl text-gray-200 font-sans mb-2 md:mb-4 md:text-left">{description}</p>
+            <p className="text-lg md:text-xl text-black font-sans mb-2 md:mb-4 md:text-left">{description}</p>
           </div>
           <div className={`${!path || !textButton ? 'hidden md:block' : ''}flex justify-center items-end mt-4`}>
             <ButtonPath path={path} textButton={textButton} />

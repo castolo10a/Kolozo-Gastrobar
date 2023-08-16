@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTripadvisor } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -11,7 +11,7 @@ export default function Footer() {
           href="https://www.facebook.com/kolozo.gastrobar"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black hover:text-slate-800"
+          className="text-black hover:text-emerald-700"
         >
           <FaFacebook size={47} />
         </a>
@@ -19,9 +19,17 @@ export default function Footer() {
           href="https://www.instagram.com/kolozo_gastrobar/?hl=es"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black hover:text-slate-800"
+          className="text-black hover:text-emerald-700"
         >
           <FaInstagram size={50} />
+        </a>
+        <a
+          href="https://www.tripadvisor.co/Restaurant_Review-g4446037-d23897576-Reviews-Kolozo_Gastrobar-La_Dorada_Caldas_Department.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-black hover:text-emerald-700"
+        >
+          <FaTripadvisor size={50} />
         </a>
       </div>
       <p className="text-black mb-4">Kolozo Gastrobar © {new Date().getFullYear()} Todos los derechos reservados</p>
@@ -30,7 +38,7 @@ export default function Footer() {
           href="https://fullstack-colombia.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className='hover:text-slate-800'
+          className='hover:text-emerald-700'
         >
           By Daniel Castillo
         </a>

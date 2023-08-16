@@ -13,17 +13,24 @@ const Carrousel = ({ images, title }) => {
 
   return (
     <div>
-      <div className="relative h-screen">
+      <div className="relative h-screen overflow-hidden">
         {images.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 w-full h-5/6 bg-cover bg-center transition-opacity duration-500 ${
-              index === currentBackgroundIndex ? 'opacity-75 z-10 ' : 'opacity-0 z-0 pointer-events-none '
-            } ${image}`}
+            className={`absolute inset-0 w-full h-5/6 transition-all duration-500 ${
+              index === currentBackgroundIndex ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
+            }`}
+            style={{
+              backgroundImage: `url(${image})`,
+              backgroundPosition: 'center bottom',
+              backgroundSize: 'cover',
+              transform: index === currentBackgroundIndex ? 'scale(1.05)' : 'scale(1)',
+              filter: index === currentBackgroundIndex ? 'blur(15px)' : 'blur(0)',
+            }}
           />
         ))}
       </div>
-      <div className="absolute bottom-0 left-0 w-full text-center h-1/6 py-12 bg-gradient-to-b from-teal-100 to-teal-800">
+      <div className="absolute bottom-0 left-0 w-full text-center h-1/6 py-12">
         <h1 className="text-black font-norse text-2xl sm:text-6xl">
           {title}
         </h1>
@@ -33,4 +40,3 @@ const Carrousel = ({ images, title }) => {
 };
 
 export default Carrousel;
-

@@ -1,6 +1,9 @@
 import { useRef, useState } from "react";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import ButtonSubmit from "../../components/Buttons/ButtonSubmit";
+import kolozositio from '../../assets/images/kolozoSitio.jpg';
+import bebida5 from '../../assets/images/bebida5.png';
+import alitas from '../../assets/images/alitas.png';
 
 const initialState = {
     user_name: '',
@@ -9,7 +12,7 @@ const initialState = {
   }
 
 export default function Contact () {
-    const images = ['bg-emperador', 'bg-kolozoGastrobar', 'bg-beerKolozo'];
+    const images = [kolozositio, bebida5, alitas];
     const title = 'CONTACTO'
     const form = useRef()
     const [input, setInput] = useState(initialState)
@@ -72,7 +75,7 @@ export default function Contact () {
     }
 
     return (
-    <div className="bg-fondo bg-cover">
+    <div className=" bg-fondo bg-cover">
         <Carrousel images={images} title={title}/>
         <div className="w-full mx-auto px-4 md:px-24">
         <div className="py-8">

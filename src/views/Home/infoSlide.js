@@ -13,7 +13,7 @@ const infoSlide = [
     },
     {
         image: 'bg-bebida1',
-        title: 'bebida1'
+        title: 'Limonada de Vino Blanco'
     },
     {
         image: 'bg-ceviche',
@@ -21,7 +21,7 @@ const infoSlide = [
     },
     {
         image: 'bg-crumble',
-        title: 'Crumble'
+        title: 'Crumble de Frutos Rojos'
     },
     {
         image: 'bg-decoracion',
@@ -29,7 +29,7 @@ const infoSlide = [
     },
     {
         image: 'bg-bebida2',
-        title: 'bebida2'
+        title: 'Limonada de Vino Rosado'
     },
     {
         image: 'bg-lomo',
@@ -41,7 +41,7 @@ const infoSlide = [
     },
     {
         image: 'bg-bebida4',
-        title: 'bebida4'
+        title: 'Limonada de Vino Tinto'
     },
     {
         image: 'bg-nachos',
@@ -49,11 +49,11 @@ const infoSlide = [
     },
     {
         image: 'bg-bebida5',
-        title: 'bebida5'
+        title: 'Sangría'
     },
     {
         image: 'bg-osobuco',
-        title: 'Osobuco'
+        title: 'Osobuco al Vino'
     },
     {
         image: 'bg-ginTonic',
@@ -65,7 +65,7 @@ const infoSlide = [
     },
     {
         image: 'bg-margarita',
-        title: 'Margarita'
+        title: 'Margarita de Mango'
     },
     {
         image: 'bg-piñaColada',
@@ -78,6 +78,14 @@ const infoSlide = [
     {
         image: 'bg-bautizo',
         title: 'Decoracion Bautizo'
+    },
+    {
+        image: 'bg-marimondas2',
+        title: 'Celebracion Carnaval'
+    },
+    {
+        image: 'bg-almuerzo',
+        title: 'Almuerzo ejecutivo'
     },
     {
         image: 'bg-amigos',
@@ -94,7 +102,7 @@ const infoSlide = [
     {
         image: 'bg-emperador',
         title: 'Emperador Kolozo'
-    },
+    }
 ]
 
 export default infoSlide;

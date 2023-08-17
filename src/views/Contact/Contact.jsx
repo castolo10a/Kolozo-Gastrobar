@@ -68,14 +68,20 @@ export default function Contact () {
           title: 'Complete los campos Obligatorios!',
           text: 'Revise los datos ingresados',
           icon: 'error',
-          confirmButtonText: 'Ok'
+          confirmButtonText: 'Ok',
+          customClass: {
+            title: 'font-norse md:text-4xl',
+          }
         })
       }else{
         Swal.fire({
           title: 'Mensaje enviado con exito!',
           text: 'Responderemos a la menor brevedad posible',
           icon: 'success',
-          confirmButtonText: 'Ok'
+          confirmButtonText: 'Ok',
+          customClass: {
+            title: 'font-norse md:text-4xl',
+          }
         })
         // emailjs
         //   .sendForm(

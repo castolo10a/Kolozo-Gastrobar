@@ -69,7 +69,7 @@ export default function Contact () {
     }
 
     return (
-    <div className=" bg-fondo bg-cover">
+    <div>
         <div className="text-center pt-24">
           <h1 className="text-black font-norse text-6xl">
             CONTACTO

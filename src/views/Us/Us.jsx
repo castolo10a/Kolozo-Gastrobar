@@ -4,7 +4,7 @@ import { infoUs } from "./infoUs";
 export default function Us () {
 
     return (
-    <div className="bg-fondo bg-cover md:pb-8">
+    <div className="md:pb-8">
         <div className="text-center pt-24">
           <h1 className="text-black font-norse text-6xl">
             NOSOTROS

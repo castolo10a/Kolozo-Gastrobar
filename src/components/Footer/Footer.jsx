@@ -47,7 +47,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           className='hover:text-emerald-700'
         >
-          By Daniel Castillo
+          Creado por Daniel Castillo
         </a>
       </p>
     </div>

@@ -1,4 +1,6 @@
 import { useRef, useState } from "react";
+// import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 import ButtonSubmit from "../../components/Buttons/ButtonSubmit";
 
 const initialState = {
@@ -8,9 +10,9 @@ const initialState = {
   }
 
 export default function Contact () {
-    const form = useRef()
-    const [input, setInput] = useState(initialState)
-    const [err, setErr] = useState(initialState)
+    const form = useRef();
+    const [input, setInput] = useState(initialState);
+    const [err, setErr] = useState(initialState);
   
     const validateEmail = (email) => {
       const regex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
@@ -60,12 +62,38 @@ export default function Contact () {
     }
   
     const handleSubmit = (event) => {
-        event.preventDefault()
-        setInput({
-        user_name: '',
-        user_email: '',
-        message: ''
+      event.preventDefault();
+      if(Object.values(err).length > 0 || Object.values(input).length === 0){
+        Swal.fire({
+          title: 'Complete los campos Obligatorios!',
+          text: 'Revise los datos ingresados',
+          icon: 'error',
+          confirmButtonText: 'Ok'
         })
+      }else{
+        Swal.fire({
+          title: 'Mensaje enviado con exito!',
+          text: 'Responderemos a la menor brevedad posible',
+          icon: 'success',
+          confirmButtonText: 'Ok'
+        })
+        // emailjs
+        //   .sendForm(
+        //     process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        //     process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        //     form.current,
+        //     process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        //   )
+        //   .then(
+        //     (result) => {
+        //       console.log(result.text)
+        //     },
+        //     (error) => {
+        //       console.log(error.text)
+        //     }
+        //   )
+        setInput(initialState)
+      }
     }
 
     return (
@@ -77,16 +105,17 @@ export default function Contact () {
         </div>
         <div className="w-full mx-auto px-4 md:px-24">
         <div className="py-8">
-              <p className="pt-2 md:pt-0 md:py-0 font-sans text-black md:text-2xl text-center">
+              <p className="pt-2 md:pt-0 md:py-0 font-sans text-black md:text-2xl text-center md:pb-4">
                 Nuestro equipo está aquí para brindarte asistencia en cualquier consulta o solicitud que puedas tener. Si deseas ponerte en contacto con nosotros, por favor utiliza el formulario que encontrarás a continuación. También puedes conectarte con nosotros a través de nuestras redes sociales. ¡Esperamos ansiosamente tus preguntas y comentarios!
-
+              </p>
+              <p className="pt-2 md:pt-0 md:py-0 font-sans text-black md:text-2xl text-center">
                 Estamos comprometidos en responder a la brevedad posible y en brindarte la atención que mereces. Tu opinión es esencial para nosotros y esperamos poder ayudarte en todo lo que necesites. ¡No dudes en contactarnos!
               </p>
             </div>
         <form
             className="flex flex-col mx-auto text-center"
             ref={form}
-            onSubmit={(event) => handleSubmit(event)}
+            onSubmit={handleSubmit}
           >
             <div className="flex flex-col md:flex-row md:justify-around md:py-4">
                 <div className="flex flex-col w-full md:w-auto md:mb-0 mb-4">
@@ -145,9 +174,7 @@ export default function Contact () {
                   </span>
               </div>
             <div className="py-8">
-                <ButtonSubmit
-                  status={Object.values(err).length !== 0}
-                />
+                <ButtonSubmit />
             </div>
           </form>
         </div>

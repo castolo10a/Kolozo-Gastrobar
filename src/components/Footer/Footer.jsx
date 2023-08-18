@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTripadvisor } from 'react-icons/fa';
-import logo from '../../assets/pictures/logo1.jpg';
+import logo from '../../assets/images/logo1.jpg';
 
 export default function Footer() {
   return (

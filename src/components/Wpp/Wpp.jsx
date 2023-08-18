@@ -1,4 +1,4 @@
-import wppImg from '../../assets/pictures/wpp.png';
+import wppImg from '../../assets/images/wpp.png';
 
 const Wpp = () => {
   return (

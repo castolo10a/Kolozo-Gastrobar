@@ -43,10 +43,7 @@ module.exports = {
         'hamburguesaGanadora' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/hamburguesaGanadora.jpg')",
         'celebracion' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/celebracion.jpg')",
         'aniversario' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/aniversario.jpg')",
-        'amigos2' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/amigos2.jpg')",
-        'marimondas' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/marimondas.jpg')",
         'almuerzo' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/almuerzo.jpg')",
-        'mujeres' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/mujeres.jpg')",
       },
       fontFamily : {
         norse: ['Norsebold', 'static']

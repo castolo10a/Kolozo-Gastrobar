@@ -6,16 +6,16 @@ export const info = [
         name: 'La mejor hamburguesa de La Dorada - Caldas'
     },
     {
+        path: '/Bookings',
+        textButton: 'RESERVA AQUÍ',
+        image: 'bg-kolozoGastrobar',
+        name: 'Experiencia única con comida exquisita, buena música y cocteles de autor'
+    },
+    {
         path: '/Menu',
         textButton: 'VER MENÚ',
         image: 'bg-tacos',
         name: 'Gastronomía Mexicana y Mediterránea'
-    },
-     {
-        path: '/Bookings',
-        textButton: 'RESERVA AQUÍ',
-        image: 'bg-beerKolozo',
-        name: 'Experiencia única con comida exquisita, buena música y cocteles de autor'
     }
 ];
 export const infoEvent = {

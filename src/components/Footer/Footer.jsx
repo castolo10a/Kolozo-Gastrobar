@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="flex justify-center items-center space-x-4 mb-4">
         <div className="border-t-2 border-black flex-grow"></div>
         <div>
-          <img src={logo} alt="Logo" className="w-24 h-auto" />
+          <img src={logo} alt="Logo" className="w-16 h-auto" />
         </div>
         <div className="border-t-2 border-black flex-grow"></div>
       </div>

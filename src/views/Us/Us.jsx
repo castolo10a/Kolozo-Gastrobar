@@ -11,7 +11,7 @@ export default function Us () {
           </h1>
         </div>
         <div>
-        {infoUs ? 
+        {infoUs.length > 0 ? 
           infoUs.map((info, index) => {
             return (
               <OtherCard

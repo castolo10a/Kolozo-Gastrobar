@@ -1,9 +1,5 @@
 const infoSlide = [
     {
-        image: 'bg-alitas',
-        title: 'alitas BBQ'
-    },
-    {
         image: 'bg-hamburguesa',
         title: 'Hamburguesa Kolozal'
     },

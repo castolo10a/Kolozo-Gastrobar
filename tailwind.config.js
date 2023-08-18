@@ -9,7 +9,6 @@ module.exports = {
         'tacos': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/tacosCamaron.png')",
         'bebida2': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/bebida2.png')",
         'bebida1': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/bebida1.png')",
-        'alitas': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/alitas.png')",
         'bebida4': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/bebida4.png')",
         'hamburguesa': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/Hamburguesa.png')",
         'ceviche': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/cevicheChicharron.png')",

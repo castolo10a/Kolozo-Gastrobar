@@ -1,4 +1,4 @@
-// import wppImg from '../../assets/pictures/wpp.png';
+import wppImg from '../../assets/pictures/wpp.png';
 
 const Wpp = () => {
   return (
@@ -9,7 +9,7 @@ const Wpp = () => {
             rel="noopener noreferrer"
             aria-label="Click to contact me by Whatsapp"
         >
-            {/* <img src={wppImg} alt="wppImg" className='w-14 h-14 md:w-20 md:h-20' /> */}
+            <img src={wppImg} alt="wppImg" className='w-14 h-14 md:w-20 md:h-20' />
         </a>
     </div>
   );

@@ -1,6 +1,6 @@
 const infoSlide = [
     {
-        image: 'bg-alitasBBQ',
+        image: 'bg-alitas',
         title: 'alitas BBQ'
     },
     {

@@ -39,7 +39,7 @@ module.exports = {
         'decoracion2': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/decoracion.jpg')",
         'decoracion': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/decoracion.png')",
         'kolozoom' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/kolozoZoom.jpg')",
-        'HamburguesaGanadora' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/hamburguesaGanadora.jpg')",
+        'hamburguesaGanadora' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/hamburguesaGanadora.jpg')",
         'fondo' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/fondo.jpg')",
         'aniversario' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/aniversario.jpg')",
         'amigos2' : "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/amigos2.jpg')",

@@ -1,6 +1,6 @@
 export const infoUs = [
     {
-        image: 'bg-HamburguesaGanadora',
+        image: 'bg-hamburguesaGanadora',
         name: 'FESTIVAL HAMBURGUESA DORADA',
         description: 'En el año 2022, fuimos honrados con el prestigioso premio a la Mejor Hamburguesa de La Dorada, Caldas. Este reconocimiento fue otorgado por votación popular durante el Festival de la Hamburguesa Dorada, un evento destacado organizado por la Cámara de Comercio de La Dorada.'
     },

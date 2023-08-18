@@ -7,7 +7,6 @@ module.exports = {
     extend: {
       backgroundImage : {
         'fondo': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/fondo.jpg')",
-        'premio': "url('C:/Users/Usuario/Desktop/Repos/Kolozo/src/assets/images/premioHamburguesa.jpg')",
       },
       fontFamily : {
         norse: ['Norsebold', 'static']

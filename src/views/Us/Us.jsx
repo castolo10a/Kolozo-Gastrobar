@@ -1,4 +1,4 @@
-import OtherCard from "../../components/OtherCard/OtherCard";
+import OtherCard from '../../components/OtherCard/OtherCard';
 import { infoUs } from "./infoUs";
 
 export default function Us () {

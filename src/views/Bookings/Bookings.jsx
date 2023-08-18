@@ -1,4 +1,4 @@
-import OtherCard from "../../components/OtherCard/OtherCard";
+import CardOther from "../../components/CardOther/CardOther";
 import { infoBookings } from "./infoBookings";
 
 export default function Reserves () {
@@ -12,7 +12,7 @@ export default function Reserves () {
           </h1>
         </div>
         <div>
-            <OtherCard
+            <CardOther
                 image={image}
                 name={name}
                 description={description}

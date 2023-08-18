@@ -1,7 +1,7 @@
 import ButtonUrl from "../Buttons/ButtonUrl";
 import ButtonPath from "../Buttons/ButtonPath";
 
-export default function OtherCard({ path, textButton, titleButton, image, name, description, index, pathMenu }) {
+export default function CardOther({ path, textButton, titleButton, image, name, description, index, pathMenu }) {
   return (
     <div className="md:flex-row flex-col w-90 md:w-5/6 mx-auto p-4">
       <div className={`flex flex-col md:items-center md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : ''} `}>

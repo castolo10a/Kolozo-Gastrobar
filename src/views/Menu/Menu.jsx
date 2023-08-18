@@ -1,4 +1,4 @@
-import OtherCard from "../../components/OtherCard/OtherCard";
+import CardOther from "../../components/CardOther/CardOther";
 import { infoMenu } from "./infoMenú";
 
 export default function Menu () {
@@ -14,7 +14,7 @@ export default function Menu () {
         {infoMenu ? 
           infoMenu.map((info, index) => {
             return (
-              <OtherCard
+              <CardOther
                 key={index}
                 pathMenu={info.pathMenu}
                 textButton={info.textButton}

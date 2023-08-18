@@ -1,4 +1,4 @@
-import OtherCard from "../../components/OtherCard/OtherCard";
+import CardOther from "../../components/CardOther/CardOther";
 import {infoEvents} from "./infoEvents";
 
 export default function Events () {
@@ -17,7 +17,7 @@ export default function Events () {
             {infoEvents ?
                 infoEvents.map((info, index) => {
                     return (
-                        <OtherCard
+                        <CardOther
                         key={index}
                         pathMenu={info.pathMenu}
                         image={info.image}

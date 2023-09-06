@@ -4,7 +4,7 @@ import {infoEvents} from "./infoEvents";
 export default function Events () {
 
     return (
-    <div>
+    <div className="animate-fade-down animate-duration-[3000ms]">
           <div className="text-center pt-24">
           <h1 className="text-black font-norse text-6xl">
             CELEBRACIONES Y EVENTOS EMPRESARIALES

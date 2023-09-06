@@ -4,7 +4,7 @@ import { infoUs } from "./infoUs";
 export default function Us () {
 
     return (
-    <div className="md:pb-8">
+    <div className="animate-fade-down animate-duration-[3000ms] md:pb-8">
         <div className="text-center pt-24">
           <h1 className="text-black font-norse text-6xl">
             NOSOTROS

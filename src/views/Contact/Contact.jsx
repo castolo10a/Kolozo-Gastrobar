@@ -105,19 +105,19 @@ export default function Contact () {
     return (
     <div>
         <div className="text-center pt-24">
-          <h1 className="text-black font-norse text-6xl">
+          <h1 className="animate-fade-down animate-duration-[3000ms] text-black font-norse text-6xl">
             CONTACTO
           </h1>
         </div>
         <div className="w-full mx-auto px-4 md:px-24">
-        <div className="py-8">
+        <div className="animate-fade-down animate-duration-[5000ms] py-8">
               <p className="pt-2 md:pt-0 md:py-0 font-sans text-black md:text-2xl text-center md:pb-4">
                 Nuestro equipo está aquí para brindarte asistencia en cualquier consulta o solicitud que puedas tener. Si deseas ponerte en contacto con nosotros, por favor utiliza el formulario que encontrarás a continuación. También puedes conectarte con nosotros a través de nuestras redes sociales. ¡Esperamos ansiosamente tus preguntas y comentarios!
               </p>
               <p className="pt-2 md:pt-0 md:py-0 font-sans text-black md:text-2xl text-center">
                 Estamos comprometidos en responder a la brevedad posible y en brindarte la atención que mereces. Tu opinión es esencial para nosotros y esperamos poder ayudarte en todo lo que necesites. ¡No dudes en contactarnos!
               </p>
-            </div>
+        </div>
         <form
             className="flex flex-col mx-auto text-center"
             ref={form}
@@ -131,7 +131,7 @@ export default function Contact () {
                         name="user_name"
                         value={input.user_name}
                         id="name"
-                        className="h-12 md:w-80 px-3 font-sans bg-transparent border border-solid border-black rounded-lg text-black md:text-2xl"
+                        className="animate-fade-right animate-duration-[5000ms] h-12 md:w-80 px-3 font-sans bg-transparent border border-solid border-black rounded-lg text-black md:text-2xl"
                         autoComplete="off"
                         onChange={handleChange}
                     />
@@ -149,7 +149,7 @@ export default function Contact () {
                         name="user_email"
                         value={input.user_email}
                         id="email"
-                        className="h-12 md:w-80 px-3 font-sans bg-transparent border border-solid border-black outline-none rounded-lg text-black md:text-2xl"
+                        className="animate-fade-left animate-duration-[5000ms] h-12 md:w-80 px-3 font-sans bg-transparent border border-solid border-black outline-none rounded-lg text-black md:text-2xl"
                         autoComplete="off"
                         onChange={handleChange}
                     />
@@ -168,7 +168,7 @@ export default function Contact () {
                   value={input.message}
                   cols="30"
                   rows="8"
-                  className="bg-transparent px-3 py-2 font-sans bg-transparent border border-solid border-black outline-none rounded-lg text-black md:text-2xl"
+                  className="animate-fade-down animate-duration-[5000ms] bg-transparent px-3 py-2 font-sans bg-transparent border border-solid border-black outline-none rounded-lg text-black md:text-2xl"
                   autoComplete="off"
                   onChange={handleChange}
                 ></textarea>
@@ -179,7 +179,7 @@ export default function Contact () {
                     {err.message}
                   </span>
               </div>
-            <div className="py-8">
+            <div className="animate-fade-down animate-duration-[5000ms] py-8">
                 <ButtonSubmit />
             </div>
           </form>

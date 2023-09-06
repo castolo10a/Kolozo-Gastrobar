@@ -4,7 +4,7 @@ import { infoMenu } from "./infoMenú";
 export default function Menu () {
 
     return (
-    <div className="md:pb-8">
+    <div className="animate-fade-down animate-duration-[3000ms] md:pb-8">
         <div className="text-center pt-24 pb-8">
           <h1 className="text-black font-norse text-6xl">
             Disfruta de una experiencia de sabores única

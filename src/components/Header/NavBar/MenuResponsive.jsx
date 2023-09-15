@@ -1,33 +1,35 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import { AiOutlineMenu } from 'react-icons/ai'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 
 const MenuResponsive = () => {
   const [oculto, setOculto] = useState(true);
 
   const action = () => {
-    oculto ? setOculto(false) : setOculto(true)
-  }
+    setOculto(!oculto)
+  };
 
   return (
-    <div className="lg:hidden flex justify-center">
-      <button aria-label="menu">
-        <AiOutlineMenu
-          className="text-black"
-          size={34}
-          onClick={action}
-        />
+    <nav className="lg:hidden flex justify-center">
+      <button 
+        onClick={action}
+        type="button"
+        className="text-black"
+      >
+        {oculto ? <AiOutlineMenu size={34} /> : <AiOutlineClose size={34} />}
       </button>
       <div
-        hidden={oculto}
-        className="absolute right-0 z-[1] min-w-full py-12 xs:px-[40vw] lg:flex lg:visible lg:flex-row font-sans font-bold text-lg"
+        className={`${
+          oculto ? "hidden" : "mt-12 absolute right-0 z-[1] min-w-full pb-12 xs:px-[40vw] lg:flex lg:visible lg:flex-row font-sans font-bold text-lg"
+        }`}
+        id="navbar-hamburger"
       >
         <ul className="text-center bg-fondo">
-          <Link to='/'>
             <li onClick={action} className="py-2 text-black cursor-pointer">
+            <Link to='/'>
               Inicio
+            </Link>
             </li>
-          </Link>
           <Link to='/Menu'>
             <li onClick={action} className="py-2 text-black cursor-pointer">
               Menú
@@ -55,7 +57,7 @@ const MenuResponsive = () => {
           </Link>
         </ul>
       </div>
-    </div>
+    </nav>
   )
 }
 

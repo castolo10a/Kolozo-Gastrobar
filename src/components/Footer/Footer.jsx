@@ -45,7 +45,6 @@ export default function Footer() {
           href="https://fullstack-colombia.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className='hover:text-emerald-700'
         >
           Creado por CastilloCoder
         </a>

@@ -38,17 +38,16 @@ export default function Home () {
         <div className="left-0 w-full text-center md:pt-14">
             <h1 className="text-black font-sans font-bold md:text-2xl">VISITANOS</h1>
         </div>
-        <div className="flex flex-col items-center justify-center md:flex-column md:items-center md:justify-center">
+        <div className="flex flex-col items-center justify-center md:flex-column md:items-center md:justify-center px-4">
             <div className="w-full md:w-3/5 p-4 text-center md:text-center">
                 <h1 className="text-black font-sans font-bold md:text-2xl">LA DORADA - CALDAS</h1>
                 <h1 className="text-black font-sans font-bold md:text-xl">B. CENTRO</h1>
                 <h1 className="text-black font-sans font-bold md:text-xl">CALLE 16 # 1-15</h1>
             </div>
-            <div className="w-full md:w-2/4 h-[50vw] lg:h-screen max-h-screen border border-solid border-black">
+            <div className="md:w-3/4 h-[50vw] lg:h-screen max-h-screen border border-solid border-black w-full">
                 <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.748646198384!2d-74.66517302552445!3d5.455069334657478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e40df6e680f47f1%3A0xb3ad1b65c2e6b98a!2sKOLOZO!5e0!3m2!1ses-419!2sco!4v1691975834487!5m2!1ses-419!2sco"
-                className="w-full h-full px-4 shadow-md"
-                allowFullScreen=""
+                className="w-full h-full shadow-md"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Mapa de la ubicación de KOLOZO"
@@ -56,10 +55,10 @@ export default function Home () {
             </div>
         </div>
         <div className="w-full text-center md:py-14">
-            <h1 className="text-black font-sans font-bold md:text-2xl pb-4">
+            <h1 className="text-black font-sans font-bold md:text-2xl pt-4">
                 Horarios de Atención
             </h1>
-            <ul className="text-black font-sans md:text-xl py-4">
+            <ul className="text-black font-sans md:text-xl py-2">
                 <li>•Martes, Miercoles y Jueves: 11 am - 4 pm (Almuerzos) | 4 pm - 1 am (Cenas)</li>
                 <li>•Viernes - Sábado: 11 am - 4 pm (Almuerzos) | 4 pm - 2 am (Cenas y Noche)</li>
                 <li>•Domingo: 11 am - 4 pm (Almuerzos) | 4 pm - 1 am (Cenas)</li>

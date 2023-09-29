@@ -47,7 +47,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           className='hover:text-emerald-700'
         >
-          Creado por DaniDev FullStack
+          Creado por CastilloCoder
         </a>
       </p>
     </div>

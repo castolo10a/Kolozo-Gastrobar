@@ -6,4 +6,4 @@
 ⚡TailwindCss 
 ⚡Javascript
 
-visita el sitio web https://gastrobarkolozo.netlify.app/ 🌐
+visita el sitio web 🍸🍽 https://gastrobarkolozo.netlify.app/ 🌐

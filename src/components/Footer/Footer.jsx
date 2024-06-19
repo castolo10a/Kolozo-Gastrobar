@@ -42,7 +42,7 @@ export default function Footer() {
       <p className="text-black mb-4">Kolozo Gastrobar © {new Date().getFullYear()} Todos los derechos reservados</p>
       <p className="text-black mb-0">
         <a 
-          href="https://fullstack-colombia.com/"
+          href="https://fullstack-colombia.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >

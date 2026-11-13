@@ -1,18 +1,29 @@
-import { useInView } from '@/hooks/useInView';
+import { motion } from 'motion/react';
+import { useInView } from 'react-intersection-observer';
 
-/** Hace aparecer su contenido con un leve desplazamiento hacia arriba al entrar en pantalla. */
-export default function Reveal({ as: Tag = 'div', delay = 0, className = '', children }) {
-  const [ref, inView] = useInView();
+const variants = {
+  hidden: { opacity: 0, y: 28 },
+  visible: { opacity: 1, y: 0 },
+};
+
+/**
+ * Hace aparecer su contenido al entrar en pantalla.
+ * react-intersection-observer detecta la visibilidad y Motion anima la entrada.
+ */
+export default function Reveal({ as = 'div', delay = 0, className = '', children }) {
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
+  const Component = motion[as];
 
   return (
-    <Tag
+    <Component
       ref={ref}
-      style={{ transitionDelay: `${delay}ms` }}
-      className={`transition duration-700 ease-out motion-reduce:transform-none motion-reduce:opacity-100 ${
-        inView ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
-      } ${className}`}
+      className={className}
+      variants={variants}
+      initial="hidden"
+      animate={inView ? 'visible' : 'hidden'}
+      transition={{ duration: 0.7, delay: delay / 1000, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}
-    </Tag>
+    </Component>
   );
 }

@@ -4,27 +4,28 @@ import emperador from '@/assets/images/emperador.jpg';
 
 export const menu = {
   eyebrow: 'Menú',
-  title: 'Una experiencia de sabores única',
+  title: 'Para comer, brindar y repetir',
   description:
-    'Una fusión de influencias mexicanas y mediterráneas, cócteles de autor y almuerzos para el día a día.',
+    'Cocina con raíz mexicana y mediterránea, coctelería de la casa y almuerzos para el día a día. Aquí van algunos favoritos.',
+  cta: 'Ver la carta completa',
   categories: [
     {
-      title: 'Cocina de autor',
-      description: 'Inspirada en las tradiciones culinarias mexicana y mediterránea.',
+      title: 'La carta',
+      description: 'Platos para poner en el centro de la mesa y pelearse el último bocado.',
       image: { src: tacos, alt: 'Tacos de camarón' },
       items: ['Tacos de camarón', 'Ceviche de chicharrón', 'Elotes carnudos', 'Nachos', 'Osobuco al vino', 'Lomo'],
     },
     {
-      title: 'Mixología',
-      description: 'Clásicos y cócteles de autor con frutas naturales y especias.',
+      title: 'Coctelería',
+      description: 'Clásicos bien hechos y creaciones de la casa con fruta natural.',
       image: { src: emperador, alt: 'Cóctel Emperador Kolozo' },
       items: ['Emperador Kolozo', 'Margarita de mango', 'Gin-tonic', 'Piña colada', 'Sangría', 'Limonadas de vino'],
     },
     {
-      title: 'Almuerzos ejecutivos',
-      description: 'Nuestra distintiva combinación de sabores auténticos, también al mediodía.',
+      title: 'Almuerzos',
+      description: 'El sazón de la casa también al mediodía, para que el día tenga lo suyo.',
       image: { src: almuerzo, alt: 'Almuerzo ejecutivo' },
-      items: ['Menú del día', 'Opciones de la carta', 'Bebidas naturales'],
+      items: ['Almuerzo ejecutivo', 'Platos de la carta', 'Bebidas naturales'],
     },
   ],
 };

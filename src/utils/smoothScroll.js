@@ -1,35 +1,43 @@
-const easeInOutCubic = (t) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2);
+import { animate } from 'motion';
+
+const EASE = [0.65, 0, 0.35, 1];
+const INTERRUPT_EVENTS = ['wheel', 'touchstart', 'keydown'];
+
+let current = null;
 
 const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-let frame = null;
+function stop() {
+  current?.stop();
+  current = null;
+  INTERRUPT_EVENTS.forEach((type) => window.removeEventListener(type, stop));
+}
 
 /**
- * Desplaza la página hasta `element` con una curva de aceleración suave.
- * Respeta el `scroll-margin-top` del elemento (compensa el header fijo).
+ * Desplaza la página hasta `element` con una animación de Motion.
+ * Respeta el `scroll-margin-top` del elemento (compensa el header fijo)
+ * y se cancela si el usuario hace scroll manual mientras se mueve.
  */
-export function scrollToElement(element, { duration = 900 } = {}) {
+export function scrollToElement(element) {
   const margin = parseFloat(getComputedStyle(element).scrollMarginTop) || 0;
-  const start = window.scrollY;
-  const target = element.getBoundingClientRect().top + start - margin;
-  const distance = target - start;
+  const from = window.scrollY;
+  const to = element.getBoundingClientRect().top + from - margin;
+  const distance = Math.abs(to - from);
 
-  if (frame) cancelAnimationFrame(frame);
+  stop();
 
-  if (prefersReducedMotion() || Math.abs(distance) < 2) {
-    window.scrollTo(0, target);
+  if (prefersReducedMotion() || distance < 2) {
+    window.scrollTo(0, to);
     return;
   }
 
-  // Trayectos largos tardan un poco más, sin pasar de 1.4 s.
-  const time = Math.min(duration + Math.abs(distance) / 10, 1400);
-  const startTime = performance.now();
+  INTERRUPT_EVENTS.forEach((type) => window.addEventListener(type, stop, { passive: true }));
 
-  const step = (now) => {
-    const progress = Math.min((now - startTime) / time, 1);
-    window.scrollTo(0, start + distance * easeInOutCubic(progress));
-    frame = progress < 1 ? requestAnimationFrame(step) : null;
-  };
-
-  frame = requestAnimationFrame(step);
+  current = animate(from, to, {
+    // Trayectos largos tardan un poco más, entre 0.8 s y 1.4 s.
+    duration: Math.min(0.8 + distance / 8000, 1.4),
+    ease: EASE,
+    onUpdate: (value) => window.scrollTo(0, value),
+    onComplete: stop,
+  });
 }

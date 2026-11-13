@@ -30,3 +30,7 @@ yarn-error.log*
 
 # playwright
 .playwright-mcp
+
+# originales de fotos y videos (se optimizan antes de usarlos)
+media/*
+!media/README.md

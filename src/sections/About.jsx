@@ -33,7 +33,7 @@ export default function About() {
       <Reveal as="article" className="mt-20 grid overflow-hidden rounded-sm bg-ink text-cream md:grid-cols-[2fr_3fr]">
         <img src={award.image.src} alt={award.image.alt} loading="lazy" className="h-64 w-full object-cover md:h-full" />
         <div className="flex flex-col justify-center p-8 md:p-12">
-          <p className="text-xs font-medium uppercase tracking-eyebrow text-brand">Reconocimiento {award.year}</p>
+          <p className="text-xs font-medium uppercase tracking-eyebrow text-brand">{award.eyebrow}</p>
           <h3 className="mt-3 font-display text-3xl font-semibold md:text-4xl">{award.title}</h3>
           <p className="mt-4 leading-relaxed text-cream/70">{award.description}</p>
         </div>

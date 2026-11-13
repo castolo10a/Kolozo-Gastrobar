@@ -12,7 +12,7 @@ export default function Gallery() {
   return (
     <Section id="galeria" theme="sand">
       <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
-        <SectionHeading eyebrow="Galería" title="Momentos Kolozo" />
+        <SectionHeading eyebrow="Galería" title="Así se vive Kolozo" />
         <Button href={instagram.href} variant="outlineDark" external className="self-start md:self-auto">
           <FaInstagram aria-hidden="true" /> Síguenos en Instagram
         </Button>

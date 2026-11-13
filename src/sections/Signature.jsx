@@ -6,7 +6,7 @@ import { signature } from '@/data/signature';
 import { buildWhatsAppUrl, whatsappMessages } from '@/utils/whatsapp';
 
 export default function Signature() {
-  const { eyebrow, title, description, image, ingredients } = signature;
+  const { eyebrow, title, description, image, ingredients, cta } = signature;
 
   return (
     <Section id="salvaje" theme="dark">
@@ -16,7 +16,7 @@ export default function Signature() {
             src={image.src}
             alt={image.alt}
             loading="lazy"
-            className="aspect-square w-full rounded-sm object-cover"
+            className="aspect-[4/5] w-full rounded-sm object-cover"
           />
         </Reveal>
 
@@ -38,7 +38,7 @@ export default function Signature() {
           </ul>
 
           <Button href={buildWhatsAppUrl(whatsappMessages.signature)} external className="mt-10">
-            Pídela por WhatsApp
+            {cta}
           </Button>
         </div>
       </div>

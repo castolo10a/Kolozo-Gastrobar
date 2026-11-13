@@ -23,8 +23,8 @@ export default function Visit() {
         <div className="flex flex-col gap-10">
           <SectionHeading
             eyebrow="Visítanos"
-            title="Reserva tu experiencia Kolozal"
-            description="Escríbenos por WhatsApp y separa tu mesa para comer, celebrar o simplemente pasar una buena noche."
+            title="Te guardamos la mesa"
+            description="Escríbenos por WhatsApp y te la apartamos, ya sea para almorzar, celebrar o arrancar la noche."
           />
 
           <InfoBlock title="Dirección">
@@ -61,7 +61,7 @@ export default function Visit() {
           </InfoBlock>
 
           <Button href={buildWhatsAppUrl(whatsappMessages.booking)} external className="self-start">
-            Reservar por WhatsApp
+            Reserva por WhatsApp
           </Button>
         </div>
 

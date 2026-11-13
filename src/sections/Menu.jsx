@@ -6,14 +6,14 @@ import { site } from '@/config/site';
 import { menu } from '@/data/menu';
 
 export default function Menu() {
-  const { eyebrow, title, description, categories } = menu;
+  const { eyebrow, title, description, cta, categories } = menu;
 
   return (
     <Section id="menu" theme="light">
       <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
         <SectionHeading eyebrow={eyebrow} title={title} description={description} />
         <Button href={site.menuUrl} variant="outlineDark" external className="self-start md:self-auto">
-          Ver carta completa
+          {cta}
         </Button>
       </div>
 

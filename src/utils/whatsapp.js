@@ -7,8 +7,9 @@ export function buildWhatsAppUrl(message) {
 }
 
 export const whatsappMessages = {
-  booking: 'Hola Kolozo, quiero hacer una reserva.',
-  event: 'Hola Kolozo, quiero información para realizar un evento.',
-  romantic: 'Hola Kolozo, quiero información sobre los planes románticos.',
-  signature: 'Hola Kolozo, quiero pedir la Hamburguesa Salvaje.',
+  booking: '¡Hola, Kolozo! Quiero reservar una mesa.',
+  event: '¡Hola, Kolozo! Quiero cotizar una celebración.',
+  romantic: '¡Hola, Kolozo! Quiero información del plan en pareja.',
+  signature: '¡Hola, Kolozo! Quiero probar la Salvaje.',
+  cinema: '¡Hola, Kolozo! ¿Cuándo es la próxima función de Cine a la mesa?',
 };

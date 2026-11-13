@@ -6,15 +6,15 @@ import { events } from '@/data/events';
 import { buildWhatsAppUrl } from '@/utils/whatsapp';
 
 export default function Events() {
-  const { eyebrow, title, description, occasions, plans } = events;
+  const { eyebrow, title, description, occasions, cta, plans } = events;
 
   return (
-    <Section id="eventos" theme="dark">
+    <Section id="eventos" theme="light">
       <SectionHeading eyebrow={eyebrow} title={title} description={description} />
 
       <ul className="mt-8 flex flex-wrap gap-2">
         {occasions.map((occasion) => (
-          <li key={occasion} className="rounded-full border border-cream/20 px-4 py-1.5 text-sm text-cream/80">
+          <li key={occasion} className="rounded-full border border-ink/15 px-4 py-1.5 text-sm text-ink/80">
             {occasion}
           </li>
         ))}
@@ -26,14 +26,14 @@ export default function Events() {
             as="article"
             key={plan.title}
             delay={index * 150}
-            className="flex flex-col overflow-hidden rounded-sm bg-ink-soft"
+            className="flex flex-col overflow-hidden rounded-sm bg-cream-dark"
           >
             <img src={plan.image.src} alt={plan.image.alt} loading="lazy" className="aspect-[16/10] w-full object-cover" />
             <div className="flex flex-1 flex-col p-8">
               <h3 className="font-display text-3xl font-semibold">{plan.title}</h3>
-              <p className="mt-3 flex-1 leading-relaxed text-cream/70">{plan.description}</p>
-              <Button href={buildWhatsAppUrl(plan.message)} variant="outlineLight" external className="mt-8 self-start">
-                Cotizar por WhatsApp
+              <p className="mt-3 flex-1 leading-relaxed text-ink/70">{plan.description}</p>
+              <Button href={buildWhatsAppUrl(plan.message)} variant="outlineDark" external className="mt-8 self-start">
+                {cta}
               </Button>
             </div>
           </Reveal>

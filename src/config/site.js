@@ -37,5 +37,5 @@ export const site = {
     },
   ],
 
-  credits: { label: 'CastilloCoder', href: 'https://fullstack-colombia.netlify.app/' },
+  credits: { label: 'CastilloCoder', href: 'https://castillocoder.netlify.app/' },
 };
